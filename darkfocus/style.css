@@ -1,5 +1,10 @@
 /* GERAL - COMEÇO */
 body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     background-color: #fffcf7;
 }
@@ -35,14 +40,15 @@ body {
 }
 
 .titulo-apresentacao {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
+
     margin-bottom: 20px;
     font-weight: 700;
-    font-size: 4vw;
+    font-size: 4rem;
 }
 
 .texto-apresentacao {
-    font-size: 30px;
+    font-size: 2rem;
     padding: 0;
 }
 
@@ -59,3 +65,98 @@ body {
 
 /* APRESENTAÇÃO - FIM */
 
+/* CARROSSEL - COMEÇO */
+.div-carrossel-informativo{
+    margin: 5% 150px;
+}
+
+.banner-carrossel{
+    border-radius: 50px;
+    background-color: black;
+    width: 100%;
+    height: 500px;
+    color: #fffcf7;
+}
+
+@media (max-width: 769px){
+    .div-carrossel-informativo{
+        margin: 5% 50px;
+    }
+}
+
+@media (max-width: 426px){
+    .div-carrossel-informativo{
+        margin: 5% 20px;
+    }
+}
+
+@media (max-width: 320px){
+    .div-carrossel-informativo{
+        margin: 5% 15px;
+    }
+}
+
+#img-banner-1{
+    width: 300px;
+}
+
+@media (max-width: 1025px){
+    #img-banner-1{
+        width: 200px;
+    }
+}
+
+.texto-carrossel{
+    font-size: 25px;
+}
+
+@media (max-width: 1025px){
+    .texto-carrossel{
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 426px){
+    .texto-carrossel{
+        font-size: 15px;
+    }
+    .titulo-carrossel{
+        font-size: 22px;
+    }
+}
+
+#img-banner-2{
+    padding: 5px;
+}
+
+@media (max-width: 1025px){
+    #img-banner-2{
+        width: 170px;
+        padding-right: 0px;
+    }
+}
+/* CARROSSEL - FIM */
+
+/* RODAPÉ - COMEÇO */
+#rodape{
+    text-align: center;
+    padding: 20px;
+    bottom: 0;
+    width: 100%;
+    background-color: #7867BF;
+    color: black;
+}
+/* RODAPÉ - FIM */
+
+/* AUXÍLIO PARA GRID */
+.azul{
+    background-color: blue;
+}
+
+.vermelho{
+    background-color: red;
+}
+
+.amarelo{
+    background-color: yellow;
+}
