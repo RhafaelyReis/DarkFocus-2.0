@@ -1,0 +1,61 @@
+/* GERAL - COMEÇO */
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: #fffcf7;
+}
+/* GERAL - FIM */
+
+/* HEADER - COMEÇO */
+#img-nav {
+    width: 13vw;
+}
+
+#linha-navbar {
+    border-width: 3px;
+    border-color: #7867BF;
+    margin-top: 0;
+}
+/* HEADER - FIM */
+
+/* APRESENTAÇÃO - COMEÇO */
+.botao-vamos {
+    background-color: black;
+    border: none;
+    color: #fffcf7;
+    border-radius: 50px;
+    padding: 10px 20px;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+}
+
+.botao-vamos:hover {
+    background-color: #7867BF;
+    color: black;
+    
+}
+
+.titulo-apresentacao {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-bottom: 20px;
+    font-weight: 700;
+    font-size: 4vw;
+}
+
+.texto-apresentacao {
+    font-size: 30px;
+    padding: 0;
+}
+
+/* Adequação da fonte para telas menores */
+@media (max-width: 769px) {
+    .titulo-apresentacao{
+        font-size: 2.5rem;
+    }
+    .texto-apresentacao{
+        padding: 0 22px;
+        font-size: 1rem;
+    }
+}
+
+/* APRESENTAÇÃO - FIM */
+
