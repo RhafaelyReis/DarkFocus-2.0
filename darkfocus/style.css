@@ -8,6 +8,24 @@ body {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     background-color: #fffcf7;
 }
+
+/* Estilo de fundo para diferentes modos */
+body {
+    transition: background-color 0.3s ease;
+}
+
+body.foco {
+    background-color: #7867BF; /* Cor para o modo FOCO */
+}
+
+body.pausa {
+    background-color: #fffcf7; /* Cor para o modo PAUSA */
+}
+
+body.pausa-longa {
+    background-color: #fffcf7; /* Cor para o modo PAUSA LONGA */
+}
+
 /* GERAL - FIM */
 
 /* HEADER - COMEÇO */
@@ -52,7 +70,7 @@ body {
 }
 
 /* Adequação da fonte para telas menores */
-@media (max-width: 769px) {
+@media (max-width: 1025px) {
     .titulo-apresentacao{
         font-size: 2.5rem;
     }
@@ -61,8 +79,82 @@ body {
         font-size: 1rem;
     }
 }
-
 /* APRESENTAÇÃO - FIM */
+
+/* TEMPORIZADOR - COMEÇO */
+.temporizador-container {
+    position: relative;
+    text-align: center;
+}
+
+.circulo {
+    width: 100%; /* Ajuste o tamanho da imagem circular conforme necessário */
+    height: auto;
+}
+
+.temporizador-texto {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 7rem;
+    font-weight: bold;
+    color: #fff;
+}
+
+@media (max-width: 769px){
+    .temporizador-texto{
+        font-size: 5rem;
+    }
+}
+
+.botao-start{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1.5rem;
+    color: #fffcf7;
+    border-color: #fffcf7;
+    border-width: 3px;
+    background-color: #7867BF;
+    padding: 5px 30px;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.botao-start:hover {
+    background-color: black;    
+}
+
+.div-botoes{
+    margin: 45px 0;
+}
+
+/* Estilo para botões temporizador */
+.botoes-temporizador {
+    background-color: #fffcf7;
+    color: black;
+    border-radius: 25px;
+    border-width: 3px;
+    padding: 5px 30px;
+    font-size: 1.5rem;
+    margin: 5px;
+}
+
+/* Estilo para botão ativo (FOCO, PAUSA ou PAUSA LONGA) */
+.ativo {
+    background-color: #7867BF;
+    color: #fffcf7;
+}
+
+.botoes-temporizador:active{
+    background-color: #7867BF;
+    color: #fffcf7;
+}
+/* TEMPORIZADOR - FIM */
 
 /* CARROSSEL - COMEÇO */
 .div-carrossel-informativo{
@@ -136,6 +228,22 @@ body {
     #img-banner-2{
         width: 170px;
         padding-right: 0px;
+    }
+}
+
+.texto-carrossel-explicativo{
+    font-size: 20px;
+}
+
+@media (max-width: 1025px){
+    .texto-carrossel-explicativo{
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 425px){
+    .texto-carrossel-explicativo{
+        font-size: 10px;
     }
 }
 /* CARROSSEL - FIM */

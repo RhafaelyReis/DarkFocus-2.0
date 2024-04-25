@@ -10,12 +10,12 @@
 </head>
 <body>
 <!-- HEADER - COMEÇO -->
-    <header class="text-center py-1">
-        <div class="container">
-            <img id="img-nav" src="darkfocus/imagens/logo.png" alt="">
-        </div>
-        <hr class="col-8" id="linha-navbar">
-    </header>
+<header class="text-center py-1">
+    <div class="container">
+        <img id="img-nav" src="darkfocus/imagens/logo.png" alt="">
+    </div>
+    <hr class="col-8" id="linha-navbar">
+</header>
 <!-- HEADER - COMEÇO -->
  
 <!-- APRESENTAÇÃO - COMEÇO -->
@@ -26,14 +26,14 @@
                 <h1 class="titulo-apresentacao display-3">Bem-Vindo(a)!</h1>
                 <p class="texto-apresentacao lead">Nós somos o DarkFocus, seu aliado na busca pela máxima produtividade! </p>
 
-                <a href="index.html#temporizador-div">
+                <a href="#temporizador-div">
                     <button type="button" class="botao-vamos">Vamos lá</button>
                 </a>
             </div>
 
             <div class="col-sm-4 col-md-8 col-lg-6 text-center img-fluid text-center">
                 <img class="img-apresentacao img-fluid" src="darkfocus/imagens/inicial.gif" alt="">
-                <a href="https://storyset.com/education" target="_blank" style="color: #7867BF;">Imagem</a>
+                <a href="https://storyset.com/education" target="_blank" style="color: #7867BF;">Imagem - Storyset</a>
             </div>
             
         </div>
@@ -42,76 +42,101 @@
 <!-- APRESENTAÇÃO - FIM -->
 
 <!-- TEMPORIZADOR - COMEÇO -->
-<br  id="temporizador-div">
-<section>
-
-</section>
+<br id="temporizador-div">
+<main>
+    <div class="container">
+        <div class="row justify-content-center align-items-center">
+            <div class="col-sm-8 col-md-8 col-lg-6">
+                <div class="temporizador-container">
+                    <img class="circulo" src="darkfocus/imagens/fundo-relogio.png" alt="Fundo do Relógio">
+                    <div class="temporizador-texto" id="temporizador">25:00</div>
+                    <button class="botao-start" id="botao-start" style="display: none;">COMEÇAR</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row justify-content-center align-items-center">
+            <div class="col-sm-8 col-md-8 col-lg-12 div-botoes text-center">
+                <button class="botoes-temporizador">FOCO</button>
+                <button class="botoes-temporizador">PAUSA</button>
+                <button class="botoes-temporizador">PAUSA LONGA</button>
+            </div>
+        </div>
+    </div>
+    <br>
+</main>
 <!-- TEMPORIZADOR - FIM -->
 
 <!-- CARROSSEL - COMEÇO -->
 <section>
-        <div id="carouselExampleIndicators" class="carousel slide div-carrossel-informativo" data-ride="carousel">
-            <ol class="carousel-indicators">
-                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-            </ol>
-            <div class="carousel-inner banner-carrossel d-flex justify-content-center align-items-center">
+    <div id="carouselExampleIndicators" class="carousel slide div-carrossel-informativo" data-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner banner-carrossel d-flex justify-content-center align-items-center">
 
-                <!-- Conteúdo do primeiro slide -->
-                <div class="carousel-item active">
-                    <div class="container">
-                        <div class="row justify-content-md-center align-items-center">
-                            <div class="col-sm-6 col-md-6 col-lg-7 text-center">
-                                <h1 class="titulo-carrossel">DarkFocus</h1>
-                                <p class="texto-carrossel">Com o DarkFocus, mergulhe em sessões de trabalho intensas, aumentando sua produtividade e mantendo sua mente afiada.</p>
-                            </div>
-                            <div class="col-sm-10 col-md-2 col-lg-3 text-center">
-                                <img src="darkfocus/imagens/dfbranco.png" id="img-banner-1" alt="DF">
-                            </div>
+            <!-- Conteúdo do primeiro slide -->
+            <div class="carousel-item active">
+                <div class="container">
+                    <div class="row justify-content-md-center align-items-center">
+                        <div class="col-sm-6 col-md-6 col-lg-7 text-center">
+                            <h1 class="titulo-carrossel">DarkFocus</h1>
+                            <p class="texto-carrossel">Com o DarkFocus, mergulhe em sessões de trabalho intensas, aumentando sua produtividade e mantendo sua mente afiada.</p>
+                        </div>
+                        <div class="col-sm-10 col-md-2 col-lg-3 text-center">
+                            <img src="darkfocus/imagens/dfbranco.png" id="img-banner-1" alt="DF">
                         </div>
                     </div>
                 </div>
-
-                <!-- Conteúdo do segundo slide -->
-                <div class="carousel-item">
-                    <div class="container">
-                        <div class="row justify-content-md-center align-items-center">
-                            <div class="col-sm-10 col-md-7 col-lg-4 text-center">
-                                <img id="img-banner-2" src="darkfocus/imagens/tomate.png" alt="Uma ilustração de um tomate"> <br>
-                                <a href="https://www.flaticon.com/br/icones-gratis/tomate" target="_blank" style="font-size: small; color: #cacaca; margin-bottom: 5px;" title="tomate ícones">Imagem</a>
-                            </div>
-                            <div class="col-sm-10 col-md-10 col-lg-6 text-center">
-                                <h1 class="titulo-carrossel">O método Pomodoro</h1>
-                                <p class="texto-carrossel">O Pomodoro é um método de gerenciamento de tempo que ajuda a manter o foco e a produtividade ao longo do dia, promovendo períodos de trabalho concentrado intercalados com momentos de descanso.</p>
-                                <a href="https://online.pucrs.br/blog/tecnica-pomodoro" target="_blank" style="color: #7867BF;">Saiba mais sobre o método clicando aqui</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Conteúdo do terceiro slide -->
-                <div class="carousel-item">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col">
-                                <!-- Conteúdo do terceiro slide -->
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                
             </div>
-            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="sr-only">Anterior</span>
-            </a>
-            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="sr-only">Próximo</span>
-            </a>
+
+            <!-- Conteúdo do segundo slide -->
+            <div class="carousel-item">
+                <div class="container">
+                    <div class="row justify-content-md-center align-items-center">
+                        <div class="col-sm-10 col-md-7 col-lg-4 text-center">
+                            <img id="img-banner-2" src="darkfocus/imagens/tomate.png" alt="Uma ilustração de um tomate"> <br>
+                            <a href="https://www.flaticon.com/br/icones-gratis/tomate" target="_blank" style="font-size: small; color: #cacaca; margin-bottom: 5px;" title="tomate ícones">Imagem - Flaticon</a>
+                        </div>
+                        <div class="col-sm-10 col-md-10 col-lg-6 text-center">
+                            <h1 class="titulo-carrossel">O método Pomodoro</h1>
+                            <p class="texto-carrossel">O Pomodoro é um método de gerenciamento de tempo que ajuda a manter o foco e a produtividade ao longo do dia, promovendo períodos de trabalho concentrado intercalados com momentos de descanso.</p>
+                            <a href="https://online.pucrs.br/blog/tecnica-pomodoro" target="_blank" style="color: #7867BF;">Saiba mais sobre o método clicando aqui</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Conteúdo do terceiro slide -->
+            <div class="carousel-item">
+                <div class="container">
+                    <div class="row justify-content-md-center align-items-center">
+                        <div class="col-sm-7 col-md-10 text-center">
+                            <h1 class="titulo-carrossel">Como utilizar nosso site</h1>
+                            <p class="texto-carrossel-explicativo">Você poderá escolher entre três modos: Foco, Pausa ou Pausa Longa, clicando nos botões correspondentes. Cada modo define um período de tempo específico para suas sessões de trabalho (25 minutos para Foco, 5 minutos para Pausa e 15 minutos para Pausa Longa).</p>
+
+                            <p class="texto-carrossel-explicativo">Após escolher um modo, o botão "COMEÇAR" será ativado. Clique nele para iniciar o temporizador. O contador regressivo será exibido com o tempo restante para sua sessão.</p>
+
+                            <p class="texto-carrossel-explicativo">Durante a sessão, você pode pausar o temporizador a qualquer momento clicando em "PAUSAR" e retomá-lo clicando em "RETOMAR". Quando o temporizador chegar a zero, um som de alerta será reproduzido para indicar o término da sessão e você poderá escolher um novo modo para continuar.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
         </div>
-    </section>
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Anterior</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Próximo</span>
+        </a>
+    </div>
+</section>
 <!-- CARROSSEL - FIM -->
 
 <!-- RODAPÉ - COMEÇO -->
@@ -123,6 +148,8 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 <!-- SCRIPT BOOTSTRAP - FIM -->
+
+<script src="darkfocus/script.js"></script>
 
 </body>
 </html>
